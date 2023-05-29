@@ -6,7 +6,7 @@ async function connectDb (){
             console.log("Db all ready Connected")
             return
         }
-        await mongoose.connect(process.env.MONGO_DB)
+        await mongoose.connect("mongodb+srv://Jitendra_yadav:Kunal8602@cluster0.rt7ec4u.mongodb.net/TinyURl")
         console.log("MongoDb is Connected")
       } catch (error) {
         console.log(error)
